@@ -11,8 +11,14 @@
     "vue": "^3.2.13"
   },
   "devDependencies": {
+    "@types/offscreencanvas": "^2019.7.0",
+    "@types/three": "^0.144.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "three": "^0.145.0"
+    "node-sass": "^7.0.3",
+    "sass-loader": "^13.1.0",
+    "three": "^0.145.0",
+    "typescript": "~4.5.5"
   },
   "browserslist": [
     "> 1%",
