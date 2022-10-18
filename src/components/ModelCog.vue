@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { renderModel } from './render.js';
+import { renderModel } from './render';
 export default defineComponent(
   {
     name: 'ModelCog',

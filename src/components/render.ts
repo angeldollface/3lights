@@ -5,29 +5,31 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 // Importing the shader for object glow-up.
-import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 
 // Importing the orbit controls.
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 // Importing the "composer" to slap a filter on our scene.
-import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 
 // Importing the filter.
-import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 
 // Importing the environment for rendering, lighting, etc.
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment';
+import { Camera, Scene } from 'three';
+import { Renderer } from 'vue';
 
 // A function to render our models.
-export function renderModel(){
+export function renderModel(): void {
 
     // We make a new three.js scene.
-    var scene = new THREE.Scene();
+    let scene: Scene = new THREE.Scene();
 
     // We make a new camera. Something has
     // to look at our scene.
-    var camera = new THREE.PerspectiveCamera(
+    let camera: Camera = new THREE.PerspectiveCamera(
         75, // Angle.
         window.innerWidth/window.innerHeight, // FOV.
         0.01,
@@ -94,12 +96,12 @@ export function renderModel(){
 
     // Empty variables to
     // populate with meshes from the loaded model.
-    var obj;
-    var sign;
-    var lightOne;
-    var lightTwo;
-    var lightThree;
-    var lightFour;
+    let obj: any;
+    let sign: any;
+    let lightOne: any;
+    let lightTwo: any;
+    let lightThree: any;
+    let lightFour: any;
 
     // Closure to load a model from a path (remote or local).
     loader.load(
