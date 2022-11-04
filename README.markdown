@@ -1,8 +1,8 @@
 # 3 LIGHTS :bulb: :heart_on_fire:
 
-![GitHub CI](https://github.com/angeldollface/3lights/actions/workflows/vue.yml/badge.svg)
+![GitHub CI](https://github.com/angeldollface/3lights/actions/workflows/react.yml/badge.svg)
 
-***A small Vue.js 3 project utilizing three.js to demonstrate the usage of the Unreal Bloom Pass effect. :bulb: :heart_on_fire:***
+***A small project utilizing three.js to demonstrate the usage of the Unreal Bloom Pass effect. :bulb: :heart_on_fire:***
 
 ## ABOUT :books:
 
@@ -10,7 +10,7 @@ I'm trying to understand and learn everything I can about three.js and Blender a
 
 ## LEARN AND RE-USE :thinking: :sparkles:
 
-If you want to understand how I've achieved this project, read the source code in the file `src/components/render.js`. (I still need to add some comments to make everything clear.)
+If you want to understand how I've achieved this project, read the source code in the file `src/render.ts`. (I still need to add some comments to make everything clear.)
 
 ## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
 
@@ -43,10 +43,10 @@ $ cd 3lights
 $ npm install
 ```
 
-- 4.) Run Vue's development server:
+- 4.) Run React's development server:
 
 ```bash
-$ npm run serve
+$ npm start
 ```
 
 - 5.) Optional: To compile this project, run this command:

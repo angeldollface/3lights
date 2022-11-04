@@ -1,3 +1,8 @@
+/*
+3 LIGHTS by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+*/
+
 // Standard three.js import.
 import * as THREE from 'three';
 
@@ -18,18 +23,16 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 
 // Importing the environment for rendering, lighting, etc.
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment';
-import { Camera, Scene } from 'three';
-import { Renderer } from 'vue';
 
 // A function to render our models.
 export function renderModel(): void {
 
     // We make a new three.js scene.
-    let scene: Scene = new THREE.Scene();
+    let scene: THREE.Scene = new THREE.Scene();
 
     // We make a new camera. Something has
     // to look at our scene.
-    let camera: Camera = new THREE.PerspectiveCamera(
+    let camera: THREE.Camera = new THREE.PerspectiveCamera(
         75, // Angle.
         window.innerWidth/window.innerHeight, // FOV.
         0.01,
@@ -105,7 +108,7 @@ export function renderModel(): void {
 
     // Closure to load a model from a path (remote or local).
     loader.load(
-        'https://angeldollface.art/assets/models/exp/LightingTest.glb',
+        'https://angeldollface.art/assets/models/LightingTest.glb',
         function(gltf){
 
           // Main model.

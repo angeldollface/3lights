@@ -1,0 +1,19 @@
+/*
+3 LIGHTS by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+*/
+
+// Styles everything.
+// Full-width elements for
+// the page, body, and canvas.
+html, body, canvas {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}

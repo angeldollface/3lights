@@ -1,4 +1,4 @@
-name: Vue.js CI
+name: React CI
 on:
   push:
     branches: [ main ]
@@ -24,4 +24,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages
-          folder: dist
+          folder: build

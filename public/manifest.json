@@ -1,0 +1,8 @@
+{
+    "short_name": "3 Lights",
+    "name": "A small project utilizing three.js to demonstrate the usage of the Unreal Bloom Pass effect.",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }

@@ -1,29 +1,37 @@
 {
   "name": "3lights",
-  "version": "0.1.0",
+  "description": "A small project utilizing three.js to demonstrate the usage of the Unreal Bloom Pass effect.",
+  "version": "1.1.0",
   "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
-  },
   "dependencies": {
-    "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "@types/node": "^16.18.2",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "@types/offscreencanvas": "^2019.7.0",
     "@types/three": "^0.144.0",
-    "@vue/cli-plugin-typescript": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "node-sass": "^7.0.3",
-    "sass-loader": "^13.1.0",
-    "three": "^0.145.0",
-    "typescript": "~4.5.5"
+    "sass": "^1.55.0",
+    "three": "^0.146.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead",
-    "not ie 11"
-  ]
+  "homepage": "/3lights/"
 }
