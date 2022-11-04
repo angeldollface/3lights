@@ -64,6 +64,11 @@ $ npm run build
 - Upload to GitHub.
 - Deployment on GitHub Pages.
 
+### Version 1.1.0
+
+- Migrated the project to React.js.
+- Better and faster performance.
+
 ## NOTE :scroll:
 
 - *3 Lights :bulb: :heart_on_fire:* by Alexander Abraham :black_heart: a.k.a. *"Angel Dollface" :dolls: :ribbon:*
