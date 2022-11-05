@@ -10,22 +10,34 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 // Importing the shader for object glow-up.
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
+import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
+
+// Importing the shader for object glow-up.
+import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass';
+
+import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass';
+
+import { DotScreenShader } from 'three/examples/jsm/shaders/DotScreenShader';
+
+import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass';
 
 // Importing the orbit controls.
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 // Importing the "composer" to slap a filter on our scene.
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
 
 // Importing the filter.
-import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
+import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
 
 // Importing the environment for rendering, lighting, etc.
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment';
 
 // A function to render our models.
 export function renderModel(): void {
+
+    // How grainy is the black-and-white filter?
+    const grainCount: number = 0.5;
 
     // We make a new three.js scene.
     let scene: THREE.Scene = new THREE.Scene();
@@ -89,6 +101,21 @@ export function renderModel(): void {
     var composer = new EffectComposer( renderer );
 	composer.addPass( renderScene );
 	composer.addPass( bloomPass );
+
+    // Instantiating the black-and-white
+    // filter.
+    const bwFilter = new FilmPass(
+        grainCount, 
+        0.5, 
+        4096,
+        1
+    );
+
+    // Adding it to the scene.
+    composer.addPass(bwFilter);
+
+    const glitch: GlitchPass = new GlitchPass();
+    composer.addPass(glitch);
 
     // And generate the scene from an environment.
     scene.environment = pmremGenerator.fromScene( environment ).texture;
