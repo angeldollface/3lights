@@ -55,7 +55,6 @@ $ npm start
 $ npm run build
 ```
 
-
 ## CHANGELOG :black_nib:
 
 ### Version 1.0.0
