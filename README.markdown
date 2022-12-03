@@ -16,7 +16,7 @@ If you want to understand how I've achieved this project, read the source code i
 
 To view a live deployed version of this project and this demo, click here: [VIEW](https://angeldollface.art/3lights)
 
-## TRY IT FOR YOURSELF! :inbox_tray:
+## TRY THIS PROJECT ON YOUR OWN MACHINE! :inbox_tray:
 
 Make sure you have the following tools installed and available from the command line:
 
