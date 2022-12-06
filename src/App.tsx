@@ -7,7 +7,7 @@ Licensed under the MIT license.
 // the 3D things happen.
 import ModelCog from './ModelCog';
 
-// Regsitering it.
+// Registering it.
 function App() {
   return (
    <ModelCog/>
