@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/3lights/static/css/main.dccf9dd2.css",
-    "main.js": "/3lights/static/js/main.3a97c246.js",
+    "main.js": "/3lights/static/js/main.c14fcf37.js",
     "index.html": "/3lights/index.html",
     "main.dccf9dd2.css.map": "/3lights/static/css/main.dccf9dd2.css.map",
-    "main.3a97c246.js.map": "/3lights/static/js/main.3a97c246.js.map"
+    "main.c14fcf37.js.map": "/3lights/static/js/main.c14fcf37.js.map"
   },
   "entrypoints": [
     "static/css/main.dccf9dd2.css",
-    "static/js/main.3a97c246.js"
+    "static/js/main.c14fcf37.js"
   ]
 }
