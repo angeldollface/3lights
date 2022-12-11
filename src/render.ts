@@ -35,7 +35,7 @@ export function renderModel(): void {
 
     // We make a new camera. Something has
     // to look at our scene.
-    let camera: THREE.Camera = new THREE.PerspectiveCamera(
+    let camera: THREE.PerspectiveCamera = new THREE.PerspectiveCamera(
         75, // Angle.
         window.innerWidth/window.innerHeight, // FOV.
         0.01,
@@ -161,7 +161,7 @@ export function renderModel(): void {
     );
 
     // We set up the camera position.
-    camera.position.set(14,3,15);
+    camera.position.set(14,3,10);
 
     // And animate the whole scene
     // recursively.
@@ -170,6 +170,13 @@ export function renderModel(): void {
         // Updates the controls on
         // every frame bounce.
         controls.update();
+
+        // Adding an event listener to resize
+        // the scene for different devices.
+        window.addEventListener(
+            'resize', 
+            resize 
+        );
 
         // Re-renders the scene on
         // every frame bounce.
@@ -182,6 +189,16 @@ export function renderModel(): void {
 
         // The "frame bounce".
         requestAnimationFrame(animate);
+    }
+
+    // Defining a nested function to adjust some renderer
+    // and camera settings.
+    const resize = () => {
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        composer.setSize(window.innerWidth, window.innerHeight);
     }
 }
 
