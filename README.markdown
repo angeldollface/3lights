@@ -8,13 +8,17 @@
 
 I'm trying to understand and learn everything I can about three.js and Blender and one of the questions that were in my mind is how to make meshes (named objects in a scene) glow and act as light sources. Guess what? I've figured it out and this is a small demo of that.
 
-## LEARN AND RE-USE :thinking: :sparkles:
-
-If you want to understand how I've achieved this project, read the source code in the file `src/render.ts`. (I still need to add some comments to make everything clear.)
-
 ## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
 
 To view a live deployed version of this project and this demo, click here: [VIEW](https://angeldollface.art/3lights)
+
+## SHOWCASE :camera:
+
+![Showcase for Voxelicious.](/assets/3lights.gif)
+
+## LEARN AND RE-USE :thinking: :sparkles:
+
+If you want to understand how I've achieved this project, read the source code in the file `src/render.ts`.
 
 ## TRY THIS PROJECT ON YOUR OWN MACHINE! :inbox_tray:
 
