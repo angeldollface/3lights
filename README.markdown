@@ -14,7 +14,7 @@ To view a live deployed version of this project and this demo, click here: [VIEW
 
 ## SHOWCASE :camera:
 
-![Showcase for Voxelicious.](/assets/3lights.gif)
+![Showcase for 3 Lights.](/assets/3lights.gif)
 
 ## LEARN AND RE-USE :thinking: :sparkles:
 
