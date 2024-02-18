@@ -10,7 +10,7 @@ I'm trying to understand and learn everything I can about three.js and Blender a
 
 ## DEPLOYED PROJECT ON GITHUB PAGES :rocket:
 
-To view a live deployed version of this project and this demo, click here: [VIEW](https://angeldollface.art/3lights)
+To view a live deployed version of this project and this demo, click here: [VIEW](https://angeldollface.boo/3lights)
 
 ## SHOWCASE :camera:
 

@@ -111,7 +111,7 @@ export function renderModel(): void {
 
     // Closure to load a model from a path (remote or local).
     loader.load(
-        'https://angeldollface.art/doll-cdn/models/LightingTest.glb',
+        'https://angeldollface.boo/doll-cdn/models/LightingTest.glb',
         function(gltf){
 
           // Main model.
